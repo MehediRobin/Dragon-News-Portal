@@ -4,11 +4,13 @@ import HomePage from "../pages/Home/HomePage";
 import SingleNewsPage from "../pages/SingleNewsPage/SingleNewsPage";
 import LogInPage from "../pages/Login/LogInPage";
 import RegisterPage from "../pages/Register/RegisterPage";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootPage />,
+
     children: [
       {
         path: "/",
@@ -16,7 +18,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/:id",
-        element: <SingleNewsPage />,
+        element: (
+          <PrivateRoute>
+            <SingleNewsPage />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",

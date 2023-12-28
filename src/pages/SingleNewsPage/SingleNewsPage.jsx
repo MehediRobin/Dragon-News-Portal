@@ -6,13 +6,7 @@ import { useParams } from "react-router-dom";
 const SingleNewsPage = () => {
   const [newsArray, setNewsArray] = useState([]);
   const { id } = useParams();
-  useEffect(() => {
-    fetch("news.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setNewsArray(data);
-      });
-  }, []);
+
   return (
     <div>
       <Header />
