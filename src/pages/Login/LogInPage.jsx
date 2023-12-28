@@ -1,5 +1,4 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import Navbar from "../shared/Navbar/Navbar";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 
@@ -13,7 +12,8 @@ const LogInPage = () => {
     const email = form.get("email");
     const password = form.get("password");
     signIn(email, password)
-      .then((res) => {
+      .then((result) => {
+        console.log(result);
         navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
@@ -22,7 +22,6 @@ const LogInPage = () => {
   };
   return (
     <div className="flex flex-col items-cente">
-      <Navbar />
       <div className=" mt-24 md:w-3/4 lg:w-1/2 mx-auto py-10 px-5 rounded bg-slate-700">
         <h2 className="text-3xl text-center text-white">Please Login</h2>
         <form
