@@ -1,0 +1,23 @@
+[
+  {
+    "news_id": 1,
+    "news_image": "https://i.insider.com/5ff78aee6d61c10019cce462?width=700",
+    "news_headline": "Breaking News: Major Event Happens",
+    "category": "Breaking",
+    "published_date": "2023-01-01"
+  },
+  {
+    "news_id": 2,
+    "news_image": "https://www.simplilearn.com/ice9/free_resources_article_thumb/Technology_Trends.jpg",
+    "news_headline": "Technology Advancement Unveiled",
+    "category": "Technology",
+    "published_date": "2023-01-02"
+  },
+  {
+    "news_id": 3,
+    "news_image": "https://builtin.com/sites/www.builtin.com/files/styles/og/public/2022-07/icons-mountains-environmental-technology-examples.png",
+    "news_headline": "Environmental Summit Concludes Successfully",
+    "category": "Environment",
+    "published_date": "2023-01-03"
+  }
+]
